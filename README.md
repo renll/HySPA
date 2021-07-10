@@ -2,7 +2,7 @@
 
 This is the PyTorch implementation of the paper:
 **HySPA: Hybrid Span Generation for Scalable Text-to-Graph Extraction**. Liliang Ren, Chenkai Sun, Heng Ji, Julia Hockenmaier. ***ACL 2021 Findings***
-[[PDF]](https://arxiv.org/pdf/2106.15838.pdf) 
+[[PDF]](https://arxiv.org/pdf/2106.15838.pdf) [[Poster]](https://drive.google.com/file/d/1L-zLdTM5EQqDAtgyjrGQWlrDx9qxnTWz/view?usp=sharing) [[Slides]](https://drive.google.com/file/d/1UjIpHx5rMXKgU5O65iHJoX0Od-LmGUcL/view?usp=sharing)
 
 Our implementation is based on the Facebook's [fairseq](https://github.com/pytorch/fairseq) toolkit.
 
