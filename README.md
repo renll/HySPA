@@ -36,7 +36,12 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
 
 ## Data preprocessing
 
-First follow the [ACE05 data preprocessing pipeline](https://github.com/dwadden/dygiepp#ace05-ace-for-entities-and-relations) of Dygie++ and then copy the json files of the preprocessed data from the `processed-data` directory (NOT the `collated-data` directory) under the Dygie++ repository to our directory `HySPA/data-bin/ace05/`.
+First follow the [ACE05 data preprocessing pipeline](https://github.com/dwadden/dygiepp#ace05-ace-for-entities-and-relations) of Dygie++ and then copy the json files of the preprocessed data from the `processed-data` directory (NOT the `collated-data` directory) under the Dygie++ repository to our directory `HySPA/data-bin/ace05/`. Then preprocess the data:
+```
+cd fairseq/data
+python ace_dataset.py 
+cd ../..
+```
 
 
 ## Training
