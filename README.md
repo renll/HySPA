@@ -6,8 +6,11 @@ This is the PyTorch implementation of the paper:
 
 Our implementation is based on the Facebook's [fairseq](https://github.com/pytorch/fairseq) toolkit.
 
-## Abstract
-Text-to-Graph extraction aims to automatically extract information graphs consisting of mentions and types from natural language texts. Existing approaches, such as table filling and pairwise scoring, have shown impressive performance on various information extraction tasks, but they are difficult to scale to datasets with longer input texts because of their second-order space/time complexities with respect to the input length. In this work, we propose a Hybrid Span Generator (HySPA) that invertibly maps the information graph to an alternating sequence of nodes and edge types, and directly generates such sequences via a hybrid span decoder which can decode both the spans and the types recurrently in linear time and space complexities. Extensive experiments on the ACE05 dataset show that our approach also significantly outperforms state-of-the-art on the joint entity and relation extraction task.
+## Overview
+<p align="center">
+<img src="overview.jpg" width="100%" />
+</p>
+In this work, we propose a Hybrid Span Generator (HySPA) that invertibly maps the information graph to an alternating sequence of nodes and edge types, and directly generates such sequences via a hybrid span decoder which can decode both the spans and the types recurrently in linear time and space complexities. Extensive experiments on the ACE05 dataset show that our approach also significantly outperforms state-of-the-art on the joint entity and relation extraction task.
 
 
 ## Requirements and Installation
@@ -61,8 +64,24 @@ bash run_gen.sh
 In the `run_gen.sh` script, we first generate the alternating sequence with the fairseq sequence generation pipeline, and then use the `evaluate.py` script to convert the alteranating sequences back to graphs and evaluate the results on the ACE05 test set.
 
 
+## Citation
 
-
-
+```
+@inproceedings{ren-etal-2021-hyspa,
+    title = "{H}y{SPA}: Hybrid Span Generation for Scalable Text-to-Graph Extraction",
+    author = "Ren, Liliang  and 
+      Sun, Chenkai  and
+      Ji, Heng  and
+      Hockenmaier, Julia",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.356",
+    doi = "10.18653/v1/2021.findings-acl.356",
+    pages = "4066--4078",
+}
+```
 
 
