@@ -8,7 +8,7 @@ Our implementation is based on the Facebook's [fairseq](https://github.com/pytor
 
 ## Overview
 <p align="center">
-<img src="overview.jpg" width="100%" />
+<img src="overview.png" width="100%" />
 </p>
 In this work, we propose a Hybrid Span Generator (HySPA) that invertibly maps the information graph to an alternating sequence of nodes and edge types, and directly generates such sequences via a hybrid span decoder which can decode both the spans and the types recurrently in linear time and space complexities. Extensive experiments on the ACE05 dataset show that our approach also significantly outperforms state-of-the-art on the joint entity and relation extraction task.
 
